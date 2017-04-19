@@ -1,6 +1,6 @@
 # Go Util
 
-A set of common function for golang slice
+A set of common function for golang data structure
 
 ## Installation
 ```shell
