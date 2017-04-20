@@ -30,3 +30,13 @@ func ExampleRangeFloat() {
 	_ = RangeFloat(0, 2, 0.5)
 	// Return [0, 0.5, 1, 1.5, 2]
 }
+
+func ExampleFillSliceByInt() {
+	_ = FillSliceByInt(5, 3)
+	// Return [5, 5, 5]
+}
+
+func ExampleFillSliceByFloat() {
+	_ = FillSliceByFloat(3.0, 5)
+	// Return [3.0, 3.0, 3.0, 3.0, 3.0]
+}

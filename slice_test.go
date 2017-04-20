@@ -79,3 +79,17 @@ func TestRangeFloat(t *testing.T) {
 	expected = []float64{}
 	assert.Equal(t, expected, arr)
 }
+
+func TestFillSliceByInt(t *testing.T) {
+	assert.Equal(t, []int{}, FillSliceByInt(5, -1))
+	assert.Equal(t, []int{}, FillSliceByInt(5, 0))
+	assert.Equal(t, []int{5}, FillSliceByInt(5, 1))
+	assert.Equal(t, []int{-5, -5, -5}, FillSliceByInt(-5, 3))
+}
+
+func TestFillSliceByFloat(t *testing.T) {
+	assert.Equal(t, []float64{}, FillSliceByFloat(5.0, -1))
+	assert.Equal(t, []float64{}, FillSliceByFloat(5.0, 0))
+	assert.Equal(t, []float64{5.0}, FillSliceByFloat(5.0, 1))
+	assert.Equal(t, []float64{-5.0, -5.0, -5.0}, FillSliceByFloat(-5.0, 3))
+}

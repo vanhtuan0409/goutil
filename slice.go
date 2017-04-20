@@ -66,3 +66,27 @@ func RangeFloat(start, end, step float64) []float64 {
 	}
 	return s
 }
+
+// FillSliceByInt Generate a slice with length and fill all position with a value
+func FillSliceByInt(value, length int) []int {
+	if length < 1 {
+		return []int{}
+	}
+	s := make([]int, length)
+	for i := 0; i < length; i++ {
+		s[i] = value
+	}
+	return s
+}
+
+// FillSliceByFloat Generate a slice with length and fill all position with a value
+func FillSliceByFloat(value float64, length int) []float64 {
+	if length < 1 {
+		return []float64{}
+	}
+	s := make([]float64, length)
+	for i := 0; i < length; i++ {
+		s[i] = value
+	}
+	return s
+}
