@@ -23,3 +23,19 @@ func Abs(num int) int {
 	}
 	return -num
 }
+
+// Pow Return power value of base and exponent
+//
+// If exponent < 0, return 0
+func Pow(base, exponent int) int {
+	if exponent < 0 {
+		return 0
+	}
+	if exponent == 0 {
+		return 1
+	}
+	if exponent == 1 {
+		return base
+	}
+	return base * Pow(base, exponent-1)
+}

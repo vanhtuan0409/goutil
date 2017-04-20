@@ -21,3 +21,9 @@ func TestAbs(t *testing.T) {
 	assert.Equal(t, 5, Abs(-5))
 	assert.Equal(t, 0, Abs(0))
 }
+func TestPow(t *testing.T) {
+	assert.Equal(t, 8, Pow(2, 3))
+	assert.Equal(t, 2, Pow(2, 1))
+	assert.Equal(t, 1, Pow(2, 0))
+	assert.Equal(t, 0, Pow(2, -5))
+}

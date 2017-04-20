@@ -30,3 +30,13 @@ func ExampleAbs() {
 	_ = Abs(0)
 	// return 0
 }
+func ExamplePow() {
+	_ = Pow(2, 0)
+	// return 1
+
+	_ = Pow(2, 3)
+	// return 8
+
+	_ = Pow(2, -5)
+	// return 0
+}
